@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitLife Wellness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2ecc71;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img/logo.jpg" style="height: 50px; width: 50px; border-radius: 50%;">
+                <p>Fitness & Healthcare</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <h3>We're here to help! Feel free to reach out with any questions or concerns you may have.</h3>
+        <br>
+
+        <div class="contact-container">
+            <h1>Get in Touch</h1>
+
+            <div class="form-container">
+                <h1>Book a Consultation</h1>
+                <form action="/submit" method="POST" onsubmit="return validateForm()">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="goal">What is Your Fitness Goal?</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">Select your goal</option>
+                        <option value="weight_loss">Weight Loss</option>
+                        <option value="Personal Training">Personal Training</option>
+                        <option value="general_fitness">General Fitness</option>
+                        <option value="Bodybuilding Coaching">Bodybuilding Coaching</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Additional Information (Optional):</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter any other information"></textarea>
+
+                    <input type="submit" value="Book Consultation">
+                </form>
+            </div>
+
+            <script>
+                function validateForm() {
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var phone = document.getElementById("phone").value;
+                    var date = document.getElementById("date").value;
+                    var goal = document.getElementById("goal").value;
+
+                    if (name == "" || email == "" || phone == "" || date == "" || goal == "") {
+                        alert("All fields must be filled out.");
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Fitness & Healthcare. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@fitnesshealthcare.com">healthcare@gmail.com</a> | Phone: 8091730740, 8219618569</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

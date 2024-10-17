@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Fitness & Healthcare</title>
+   <style>
+    
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px; /
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 0; 
+}
+
+nav ul li a:hover {
+    color: #f39c12; 
+    border-bottom: 2px solid #f39c12;
+}
+
+header a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f39c12;
+}
+
+
+.about {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h1,
+.about h2 {
+    color: #2c3e50;
+    margin-bottom: 10px; 
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap; 
+}
+
+.team-member {
+    text-align: center;
+    flex: 1;
+    margin: 10px; 
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 2px solid #2c3e50; 
+}
+
+.about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.testimonials {
+    background: #eaf4f4;
+    border-left: 5px solid #1abc9c; 
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+    padding: 10px 20px;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #1abc9c; 
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+   </style>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <div class="logo"><img src="../public/img/logo.jpg" style="height: 50px ; width: 50px; border-radius: 50%;">
+                <p>Fitness & Healthcare</p></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+       
+        <h2>Our Vision</h2>
+        <p>We envision a world where everyone has access to the knowledge and resources necessary to live a healthy and fulfilling life. We aim to inspire individuals to pursue their health and wellness journey with confidence and enthusiasm.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide comprehensive fitness and healthcare solutions tailored to the unique needs of each individual. We strive to create a supportive community that fosters motivation, education, and success.</p>
+        
+        <h2>Meet Our Team</h2>
+        
+        <div class="team-container">
+            <div class="team-member">
+                <img src="img/john-trainer.jpg" alt="Harish Kumar">
+                <h3>Harish Kumar</h3>
+                <p>Nutrition Specialist dedicated to creating customized meal plans that promote healthy eating habits and overall wellness.</p>
+            </div>
+            <div class="team-member">
+                <img src="img/Screenshot 2024-10-14 131908.png" alt="Akshun Jolly">
+                <h3>Akshun Jolly</h3>
+                <p>Healthcare Consultant specializing in preventive care and rehabilitation. Committed to guiding patients towards healthier lifestyles.</p>
+            </div>
+            <div class="team-member">
+                <img src="img/Screenshot 2024-10-14 131427.png" alt="Vasu Rawat">
+                <h3>Vasu Rawat</h3>
+                <p> Passionate about helping others achieve their fitness goals through tailored training programs.</p>
+                
+            </div>
+        </div>
+        
+        <h2>Our Philosophy</h2>
+        <p>We believe that fitness and healthcare go hand in hand. Our holistic approach ensures that every individual receives the support and resources they need to thrive. We focus on education, motivation, and building a sustainable lifestyle that lasts.</p>
+        
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Personalized programs tailored to your needs.</li>
+            <li>Expert team with years of experience.</li>
+            <li>Comprehensive services covering fitness and healthcare.</li>
+            <li>Supportive community focused on wellness.</li>
+        </ul>
+        
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <blockquote>
+                <p>"Joining Fitness & Healthcare was the best decision I've ever made. The team is incredibly supportive and knowledgeable!"</p>
+                <cite>- Sarah L.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The personalized approach to my fitness journey has transformed my life. I feel stronger and healthier than ever!"</p>
+                <cite>- Mike D.</cite>
+            </blockquote>
+        </div>
+        <h1>About Us</h1>
+        <p>At Fitness & Healthcare, we are dedicated to providing top-tier fitness and healthcare services to help you achieve your wellness goals. Our mission is to empower individuals to take charge of their health through personalized fitness programs and expert healthcare consultations.</p>
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Fitness & Healthcare. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@fitnesshealthcare.com">info@fitnesshealthcare.com</a> | Phone: 8091730740</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+            <p>Your journey to better health starts here! Join our community and stay updated with the latest fitness tips and healthcare advice.</p>
+        </div>
+
+    </footer>
+    <script src="services.html"></script>
+    </body>
+    </html>
+

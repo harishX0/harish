@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the truth about healthy eating and how to maintain a balanced diet.">
+    <title>The Truth About Healthy Eating</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .main-content h2 {
+            color: #28a745;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .tip {
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ffffff;
+        }
+
+        .tip a {
+            color: #007BFF;
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        }
+
+        .tip a:hover {
+            color: #0056b3;
+            text-decoration: underline; 
+        }
+
+        .tip p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .products {
+            margin: 30px 0; 
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .tip {
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ffffff;
+        }
+
+        .tip a {
+            color: #007BFF; 
+            text-decoration: none; 
+            font-weight: bold;
+            transition: color 0.3s; 
+        }
+
+        .tip a:hover {
+            color: #0056b3; 
+            text-decoration: underline;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+
+
+        .product img {
+         width: 15%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .product p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo"><img src="../public/img/logo.jpg" style="height: 50px ; width: 50px; border-radius: 50%;">
+                <p>Fitness & Healthcare</p></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="main" style="text-align: center; background-color: #349d38; margin-top: 30px;">
+        <h1>The Truth About Healthy Eating</h1>
+        <p>Discover the facts behind a balanced diet and how it impacts your health.</p>
+   </div>
+
+    <div class="container">
+        <div class="main-content">
+            <h2 style="text-align: center;">Introduction to Healthy Eating</h2>
+            <p>Eating healthy is about balance, variety, and moderation. By understanding what your body needs and making smart choices, you can enjoy a healthy diet that fuels your life and prevents disease.</p>
+            <div class="imgctr" style="height:auto;width: 100%;display: flex;align-items: center; justify-content: center;">
+                <img src="./img/dd.jpg" alt="Healthy Eating Image">
+            </div>
+            <p>A well-balanced diet is one that gives your body the nutrients it needs to function correctly. To get the proper nutrition from your diet, you should consume most of your daily calories in:</p>
+            <ul>
+                <li>Fruits</li>
+                <li>Vegetables</li>
+                <li>Whole grains</li>
+                <li>Proteins (lean meats, fish, eggs, legumes)</li>
+                <li>Healthy fats (nuts, seeds, olive oil)</li>
+            </ul>
+        </div>
+
+        <div class="tips">
+            <div class="tip">
+                <a href="stay hibernate.html" > 1: Stay Hydrated</a>
+                <p>Drinking plenty of water helps maintain the balance of body fluids, energizes muscles, and improves skin complexion.</p>
+            </div>
+
+            <div class="tip">
+                <a href="Eat More Greens.html"> Eat More Greens</a>
+                <p>Vegetables are packed with essential nutrients and vitamins. Incorporating them into every meal boosts your health significantly.</p>
+            </div>
+
+            <div class="tip">
+                <a href="Balance Your Plate.html">Balance Your Plate</a>
+
+                <p>Make sure half of your plate is filled with fruits and vegetables, one quarter with protein, and the other with whole grains.</p>
+            </div>
+
+            <div class="tip">
+                <a href="Limit Processed Foods.html"> Limit Processed Foods</a>
+                <p>Minimize the intake of processed foods that are high in sugar, salt, and unhealthy fats, which can lead to various health issues.</p>
+            </div>
+            <div class="tip">
+                <a href="Control Portion.html">Portion Sizes</a> 
+                <p>Controlling your portion sizes can prevent overeating, helping you maintain a healthy weight and balanced diet.</p>
+            </div>
+
+            <div class="tip">
+                <a href="Eat Mindfully.html" >Eat Mindfully</a>
+                <p>Practice mindful eating by paying attention to your hunger cues, eating slowly, and savoring your food without distractions.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="products">
+                <div class="product">
+                    <img src="./img/isooo.jpg" alt="Whey Protein">
+                    <h3>Whey Protein Isolate</h3>
+                    <p class="price">₹3999</p>
+                    <p>High-quality whey protein isolate to support muscle recovery and growth.</p>
+                    <button class="btn" onclick="openModal('Whey Protein Isolate', 3999)">Add to Cart</button>
+                </div>
+    
+                <div class="product">
+                    <img src="./img/mc.webp" alt="Casein Protein">
+                    <h3>Casein Protein Powder</h3>
+                    <p class="price">₹3499</p>
+                    <p>Slow-digesting protein ideal for overnight muscle recovery.</p>
+                    <button class="btn" onclick="openModal('Casein Protein Powder', 3499)">Add to Cart</button>
+                </div>
+    
+                <div class="product">
+                    <img src="./img/vegan.jpeg" alt="Vegan Protein">
+                    <h3>Vegan Protein Blend</h3>
+                    <p class="price">₹2999</p>
+                    <p>A plant-based protein blend for a healthy vegan lifestyle.</p>
+                    <button class="btn" onclick="openModal('Vegan Protein Blend', 2999)">Add to Cart</button>
+                  </div>
+            <a href="./protion.html">VIEW MORE PRODUCTS</a>
+            
+        </div>
+</div>
+    </div>
+    
+    <h3 style="text-align: center;"> <a href="./services.html" >  Go To Services Page </a></h3>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Fitness & Healthcare. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@fitnesshealthcare.com">info@fitnesshealthcare.com</a> | Phone: 8091730740</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+            <p>Your journey to better health starts here! Join our community and stay updated with the latest fitness tips and healthcare advice.</p>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        const stripe = Stripe('pk_test_51QAdhIHC7xdurqOqm8IGlzW1WBtFvmkgcRP1Eanh4Bl2eeuybkOaYhDiAelVKK8snYoMAMr9HGRroQbo2eo9x9QR00Gk4L9pCj_KEY'); // Replace with your Stripe public key
+        const elements = stripe.elements();
+        const cardElement = elements.create('card');
+        cardElement.mount('#card-element');
+
+        function openModal(productName, productPrice) {
+            document.getElementById('product-name').value = productName;
+            document.getElementById('product-price').value = productPrice;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        document.getElementById('payment-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const { paymentMethod, error } = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement,
+                billing_details: {
+                    name: document.getElementById('product-name').value
+                }
+            });
+
+            if (error) {
+                document.getElementById('card-errors').textContent = error.message;
+            } else {
+                // Send paymentMethod.id to your server (see below)
+                fetch('/create-payment-intent', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        paymentMethodId: paymentMethod.id,
+                        amount: document.getElementById('product-price').value
+                    }),
+                }).then(response => response.json()).then(data => {
+                    if (data.error) {
+                        document.getElementById('card-errors').textContent = data.error;
+                    } else {
+                        alert('Payment successful!');
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+    </body>
+    </html>
+    
